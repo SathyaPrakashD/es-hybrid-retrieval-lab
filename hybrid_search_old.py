@@ -1,13 +1,19 @@
-"""Run BM25, kNN, or hybrid retrieval against the news_articles index.
+"""HISTORICAL REFERENCE — standard (unweighted) RRF implementation.
 
-Used for Steps 6 through 9 of the ES hybrid retrieval lab. Supports three
-retrieval modes — bm25, vector, and hybrid — with an optional category filter.
+This file predates hybrid_search.py and implements Reciprocal Rank Fusion
+without per-method weights. It is kept for comparison purposes so you can
+see the difference between standard RRF and weighted RRF side-by-side.
+
+For all new work, use hybrid_search.py instead. hybrid_search.py extends
+this implementation with:
+  - Per-method weights (--bm25-weight, --vector-weight flags)
+  - A cleaner separation of BM25, vector, and hybrid code paths
 
 Run from inside the project directory with the venv activated:
-    python hybrid_search.py --mode bm25 "managing personal finance"
-    python hybrid_search.py --mode vector "managing personal finance"
-    python hybrid_search.py --mode hybrid "managing personal finance"
-    python hybrid_search.py --mode hybrid "managing personal finance" --category MONEY
+    python hybrid_search_old.py --mode bm25 "managing personal finance"
+    python hybrid_search_old.py --mode vector "managing personal finance"
+    python hybrid_search_old.py --mode hybrid "managing personal finance"
+    python hybrid_search_old.py --mode hybrid "managing personal finance" --category MONEY
 """
 import argparse
 from typing import Iterable
