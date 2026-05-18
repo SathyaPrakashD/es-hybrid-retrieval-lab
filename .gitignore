@@ -1,1 +1,24 @@
-.venv
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Dataset — download from Kaggle (see README)
+News_Category_Dataset_v3.json
+
+# Sentence-Transformers model cache
+.cache/
+
+# macOS
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
