@@ -1,0 +1,49 @@
+# docker-compose.yml
+# Local-dev Elasticsearch setup for the es-hybrid-retrieval-lab project.
+# Single-node cluster, security disabled — for LOCAL DEV ONLY, never production.
+
+services:
+  elasticsearch:
+    # Pin the exact version. "latest" tag is unsupported by Elastic and
+    # would make this file non-reproducible six months from now.
+    image: docker.elastic.co/elasticsearch/elasticsearch:9.4.1
+    container_name: es-lab
+    environment:
+      # Single-node "cluster" — no peer discovery needed.
+      - discovery.type=single-node
+      # Disable HTTPS and authentication for local dev.
+      # In production these are mandatory; here they add friction with zero learning value.
+      - xpack.security.enabled=false
+      - xpack.security.http.ssl.enabled=false
+      # JVM heap — 1GB is enough for our 50K-doc corpus.
+      # Rule of thumb in production: 50% of system RAM, capped at ~31GB.
+      - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
+    ports:
+      # Expose the HTTP API on the standard port.
+      - "9200:9200"
+    volumes:
+      # Persist data across container restarts so we don't re-index every time.
+      - es_data:/usr/share/elasticsearch/data
+    healthcheck:
+      # ES takes ~30-60s to come up on first start. Healthcheck lets compose wait.
+      test: ["CMD-SHELL", "curl -fs http://localhost:9200/_cluster/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  kibana:
+    # Kibana is the web UI for browsing indices and running queries interactively.
+    # Optional for the eval work but extremely useful while learning.
+    image: docker.elastic.co/kibana/kibana:9.4.1
+    container_name: kibana-lab
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+
+volumes:
+  es_data:
+    driver: local

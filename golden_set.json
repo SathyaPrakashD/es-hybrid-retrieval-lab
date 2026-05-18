@@ -1,0 +1,92 @@
+[
+  {
+    "query": "automatic voter registration Oregon program",
+    "expected_id": "KgGNOp4BhXOtb4tAWyIJ",
+    "expected_headline": "There's More Good News For One Of The Country's Biggest Voting Reforms",
+    "expected_category": "POLITICS"
+  },
+  {
+    "query": "healthcare industry concerns about Republican insurance reform",
+    "expected_id": "ggGNOp4BhXOtb4tAu2Jp",
+    "expected_headline": "Insurers Are Worried About The House GOP Health Care Bill",
+    "expected_category": "POLITICS"
+  },
+  {
+    "query": "state execution method choice between electric chair and firing squad",
+    "expected_id": "awCMOp4BhXOtb4tAb8xr",
+    "expected_headline": "South Carolina Law Forces Death Row Inmates To Choose Firing Squad Or Electric Chair",
+    "expected_category": "POLITICS"
+  },
+  {
+    "query": "actresses defending women's bodybuilding strength training",
+    "expected_id": "0AGNOp4BhXOtb4tAeDf9",
+    "expected_headline": "'GLOW' Star Betty Gilpin Explains Why It's Actually Just Fine For Women To Bulk Up",
+    "expected_category": "ENTERTAINMENT"
+  },
+  {
+    "query": "comedy writers cutting jokes after real news made them too realistic",
+    "expected_id": "kwGNOp4BhXOtb4tAqlZR",
+    "expected_headline": "'Veep' Had To Kill A 'Golden Shower' Joke Because Of The Trump Dossier",
+    "expected_category": "ENTERTAINMENT"
+  },
+  {
+    "query": "streaming documentaries about US politics and democracy",
+    "expected_id": "JgGNOp4BhXOtb4tANxNB",
+    "expected_headline": "5 Netflix Documentaries To Help You Understand This Political Mess",
+    "expected_category": "ENTERTAINMENT"
+  },
+  {
+    "query": "workplace safety violations resulting in worker deaths with minimal penalties",
+    "expected_id": "AQGNOp4BhXOtb4tAIQkI",
+    "expected_headline": "Jim Spencer Died In A Pile Of Dirt. The Law Was Too Weak To Help.",
+    "expected_category": "BUSINESS"
+  },
+  {
+    "query": "non-compete clauses being applied to low-wage and minimum wage workers",
+    "expected_id": "FQGNOp4BhXOtb4tAmEvN",
+    "expected_headline": "Why Janitors Get Noncompete Agreements, Too",
+    "expected_category": "BUSINESS"
+  },
+  {
+    "query": "how to identify dishonest practices from a financial advisor",
+    "expected_id": "WAGNOp4BhXOtb4tAjUKy",
+    "expected_headline": "The Lies Your Financial Advisor Tells (And How To Spot Them)",
+    "expected_category": "BUSINESS"
+  },
+  {
+    "query": "hidden gem destinations in Italy beyond major tourist cities",
+    "expected_id": "xQCMOp4BhXOtb4tAve9p",
+    "expected_headline": "7 Italian Towns (That Aren't Rome Or Florence) You Have To Visit",
+    "expected_category": "TRAVEL"
+  },
+  {
+    "query": "safest Asian countries for women travelling alone",
+    "expected_id": "AgGNOp4BhXOtb4tANBHA",
+    "expected_headline": "7 Reasons Why Japan Is Amazing For Solo Female Travelers",
+    "expected_category": "TRAVEL"
+  },
+  {
+    "query": "crowded tourist destinations to skip during peak season",
+    "expected_id": "4QCMOp4BhXOtb4tA-vLp",
+    "expected_headline": "15 Popular Travel Destinations You Should Avoid In The Summer",
+    "expected_category": "TRAVEL"
+  },
+  {
+    "query": "how to save money for irregular expenses throughout the year",
+    "expected_id": "fACMOp4BhXOtb4tAgNYR",
+    "expected_headline": "What Is A Sinking Fund ― And Why Should You Have One?",
+    "expected_category": "MONEY"
+  },
+  {
+    "query": "alternative to monthly budgeting for people who run out of money",
+    "expected_id": "HACMOp4BhXOtb4tAgNcR",
+    "expected_headline": "Always Strapped For Cash? The 'Paycheck Budget' Could Be A Gamechanger.",
+    "expected_category": "MONEY"
+  },
+  {
+    "query": "when borrowing money is a smart financial decision versus a mistake",
+    "expected_id": "oACMOp4BhXOtb4tAht3A",
+    "expected_headline": "Here's The Real Difference Between Good Debt And Bad Debt",
+    "expected_category": "MONEY"
+  }
+]
