@@ -1,3 +1,8 @@
+---
+Title: es-hybrid-retrieval-lab
+
+---
+
 # es-hybrid-retrieval-lab
 
 A measured comparison of BM25, dense vector search, and hybrid retrieval
